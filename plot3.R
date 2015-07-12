@@ -37,7 +37,7 @@ png(filename="plot3.png",
 
 with(power_data,
 { plot(Datetime, Global_active_power, type="n", xlab="",
-       ylab="Energy sub mettering", ylim=lim)
+       ylab="Energy sub metering", ylim=lim)
   lines(Datetime, Sub_metering_1, col="black")
   lines(Datetime, Sub_metering_2, col="red")
   lines(Datetime, Sub_metering_3, col="blue")
