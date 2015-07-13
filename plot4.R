@@ -32,6 +32,7 @@ png(filename="plot4.png",
     height    = 480,
     units     = "px",)
 
+lim<-c(0,max(power_data$Sub_metering_1,power_data$Sub_metering_2,power_data$Sub_metering_3))
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
 with(power_data, {
   plot(Datetime, Global_active_power, type="n", xlab="", ylab = "Global Active Power")
